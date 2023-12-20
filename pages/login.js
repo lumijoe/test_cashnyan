@@ -15,19 +15,14 @@ export default function Login() {
       <Head>
         <meta charSet="UTF-8" />
         <title>Login</title>
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          crossOrigin="anonymous"
-        />
       </Head>
 
       <header>
-        <h1 className="display-4">Message Board</h1>
+        <h1 className="display-4">CashNyan</h1>
       </header>
 
       <div role="main">
-        <p>Enter your login name.</p>
+        <p>タイトル、その他テキスト入力エリア</p>
         <div className="form-group">
           <label htmlFor="id_input">Login name:</label>
           <input
@@ -38,7 +33,7 @@ export default function Login() {
           />
         </div>
 
-        <button onClick={handleSetId} className="btn btn-primary">
+        <button onClick={handleSetId} className="bg-red-400">
           Submit
         </button>
       </div>
