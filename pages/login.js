@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Header from 'components/Header'
+import Link from 'next/link'
 
 
 import { useEffect } from 'react';
