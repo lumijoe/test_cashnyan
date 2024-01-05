@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import MessageBoard from '../components/MessageBoard';
+import Header from '../components/Header.js'
 
 export default function Index() {
 // const Index = () => {
@@ -19,26 +20,24 @@ export default function Index() {
   };
 
   return (
-    <div className="container">
+    <div className="container items-center">
       <Head>
         {/* metaタグ、アクセシビリティ、追加すること */}
         <meta charSet="UTF-8" />
-        <title>Message Board</title>
+        <title>Test CashNyan</title>
       </Head>
-
-      <header>
-        <h1 className="display-4">Message Board</h1>
-      </header>
+      <Header />
+      
 
       <div role="main">
-        <p>※ Messages are stored up to 10.</p>
+        <p>支出入力</p>
 
-        <form method="post" action="/">
-          <p>ID: {id}</p>
+        <form method="post" action="/" className='bg-gray-400'>
+          <p>何に使ったか: {id}</p>
           <input type="hidden" name="id" value={id} />
           <div className="form-group">
-            <label htmlFor="msg">Message</label>
-            <input type="text" name="msg" id="msg" className="form-control" />
+            <label htmlFor="msg">支出入力</label>
+            <input type="number" name="msg" id="msg" className="form-control" />
             <input type="submit" value="Send" className="btn btn-primary" />
           </div>
         </form>

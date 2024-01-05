@@ -1,1 +1,2 @@
 連携確認1220 am OK
+起動：node server.js + localhost:3004
